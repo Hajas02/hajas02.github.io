@@ -1,0 +1,38 @@
+.Tym
+    {
+        width: 50%;
+        border: 5px solid #11110E;
+        border-radius: 10px;
+    }
+    .TymDiv{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .TabulkaTymu{
+        width: 30%;
+        font-size: 20px;
+        background-color: #c9c9c9;
+    }
+    .TabulkaTymu, tr, th, td{
+        border: 2px solid;
+    }
+    .TabulkaTymu td{
+    text-align: center;
+
+    }
+    @media only screen and (max-width: 850px) {
+        .TymDiv{
+            flex-direction: column;
+        }
+        .TabulkaTymu{
+            margin-top: 50px;
+        }
+        .Tym{
+            width: 90%;
+        }
+        .TabulkaTymu{
+            width: 90%;
+        }
+    }

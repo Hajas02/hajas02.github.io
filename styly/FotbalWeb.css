@@ -1,0 +1,99 @@
+.uvodniText{
+    width: 30%;
+    background-color: #c9c9c9;
+        font-size: 1.8em;
+        border: 5px solid #11110E;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .hlavičkaÚvodu{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+    }
+    .hlavičkaÚvodu img{
+        width: 45%;
+        border: 5px solid #11110E;
+        border-radius: 10px;
+    }
+    .vstupenkyForm{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        height: 300px;
+    }
+    .divVstupenky{
+        width: 30%;
+        background-color: #c9c9c9;
+        border: 5px solid #11110E;
+        border-radius: 10px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mapaDiv{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .mapa{
+        width: 600px;
+        height: 400px;
+        border-radius: 30px;
+    }
+    .mapaAVstupenkyDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .uvodHistorie{
+        margin-top: 100px;
+        padding: 50px;
+        width: 60%;
+        margin-left: 20%;
+        font-size: 1.5em;
+    }
+    .uvodHistorie div{
+        background-color: #c9c9c9;
+        border: 5px solid #11110E;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    @media only screen and (max-width: 1000px) {
+        .hlavičkaÚvodu{
+            flex-direction: column;
+        }
+        .uvodniText{
+            width: 90%;
+        }
+        .hlavičkaÚvodu img{
+            width: 90%;
+        }
+        .mapaAVstupenkyDiv{
+            flex-direction: column;
+        }
+        .divVstupenky{
+            width: 90%;
+            margin-top: 50px;
+        }
+        .uvodHistorie{
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            padding: 10px;
+        }
+    }
+    @media only screen and (max-width: 650px) {
+        .mapa{
+            width: 300px;
+            height: 200px;
+        }
+    }
+
+

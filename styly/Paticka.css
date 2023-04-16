@@ -1,0 +1,85 @@
+footer{
+    width: 100%;
+    background-color: #c9c9c9;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    border: 5px solid #11110E;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navigaceALogo{
+    width: 450px;
+}
+.navigaceALogo img{
+    width: 40px;
+    height: 50px;
+    margin-right: 20px;
+}
+.fotoLogoDiv{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10%;
+}
+.patickaNavigace{
+    width: 100%;
+}
+.patickaNavigaceList{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.patickaNavigaceList li{
+    list-style: none; 
+    border-right: 2px solid #11110E;
+    padding-right: 5px;
+}
+.patickaNavigaceList li a{
+    text-decoration: none;
+    color: #11110E;
+    cursor: pointer;
+}
+.copyright{
+    margin-right: 20px;
+}
+.patickaKontakt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.patickaKontakt p{
+    margin-left: 5px;
+}
+.zdroje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 10%;
+}
+.zdroje p{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 1050px) {
+    footer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .patickaObsah, .copyright{
+        margin-left: 5%;
+    }
+    .patickaNavigaceList{
+        flex-direction: column;
+        height: 110px;
+    }
+    .navigaceALogo{
+        width: 100%;
+    }
+    .fotoLogoDiv{
+        margin-left: 20%;
+    }
+}

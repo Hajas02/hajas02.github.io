@@ -1,0 +1,59 @@
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+.navigaceMenu{
+    background-color: #c9c9c9;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 5px solid #11110E;
+    border-radius: 10px;
+}
+
+.navigaceMenu ul{
+    display: flex;
+    align-items: center;
+}
+
+.navigaceMenu li{
+    float:right;
+    list-style: none;
+    margin: 13px 20px;
+}
+    
+.navigaceMenu li a{
+    padding: 8px 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #11110E;
+}
+
+.logo{
+    height: 8em;
+}
+.navHlava{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.navHlava div{
+    color: #11110E;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+@media only screen and (max-width: 1025px) {
+    .navigaceMenu{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width: 785px) {
+    .navigaceMenu ul{
+        flex-direction: column;
+    }
+}

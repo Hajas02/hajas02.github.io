@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FotbalWeb</title>
+    <link rel="stylesheet" href="./styly/navigaceMenu.css">
+    <link rel="stylesheet" href="./styly/FotbalWeb.css">
+    <link rel="stylesheet" href="./styly/Tym.css">
+    <link rel="stylesheet" href="./styly/Paticka.css">
+    <script src="https://api.mapy.cz/loader.js"></script>
+    <script>Loader.load()</script>
+    <script>
+        function buttonHandler() {
+            alert("Děkujeme. Vaše žádost byla zaregistrovaná, vyčkejte na email.")
+        }
+    </script>
+</head>
+
+<body>
+    <nav class="navigaceMenu">
+        <div class="navHlava">
+            <img class="logo" src="./obrazky/logo.png" alt="logo">
+            <div>FC Hradec Králové</div>
+        </div>
+        <ul>
+            <li><a href="index.html">Úvod</a></li>
+            <li><a href="./A-tym.html">A-tým</a></li>
+            <li><a href="./B-tym.html">B-tým</a></li>
+            <li><a href="./Stadion.html">Stadion</a></li>
+            <li><a href="./Fotogalerie.html">Fotogalerie</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <div class="hlavičkaÚvodu">
+            <p class="uvodniText">
+
+                FC Hradec Králové je český profesionální fotbalový klub, který sídlí v Hradci Králové.
+                Ve své historii vyhrál jedenkrát českolovenský ligový titul a jedenkrát český fotbalový pohár.
+                Tým hraje nejvyšší českou soutěž 1. českou fotbalovou ligu. Dokud nebude dostavěn stadion Malšovická
+                aréna, bude klub sehrávat svá domácí utkání na Městském stadioně Mladá Boleslav.
+                Klubové barvy jsou černá a bílá.
+
+                Založen byl v roce 1905 pod názvem SK Hradec Králové. Svůj současný název nese od roku 2005.
+
+
+            </p>
+            <img src="./obrazky/úvodní.jpg" alt="tym">
+        </div>
+        <div class="mapaAVstupenkyDiv">
+            <div class="mapaDiv">
+                <h2>Kde nás najdete</h2>
+                <div class="mapa" id="mapa"></div>
+
+            </div>
+            <div class="divVstupenky">
+                <h2>Prodej vstupenek</h2>
+                <p>Zadejte své údaje a my vám pošleme email</p>
+                <form class="vstupenkyForm">
+                    <label for="jmeno">Jméno</label>
+                    <input type="text" id="jmeno" name="jmeno">
+                    <label for="prijmeni">Příjmení</label>
+                    <input type="text" name="prijmeni" id="prijmeni">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="vstupenkyVyber">Výběr vstupenky</label>
+                    <select name="vstupenkyVyber" id="vstupenkyVyber">
+                        <option value="listek">Lístek</option>
+                        <option value="pernamentka">Pernamentka</option>
+                    </select>
+                    <input class="potvrdit" type="submit" value="Potvrdit" onclick="buttonHandler()">
+                </form>
+            </div>
+        </div>
+        <div class="uvodHistorie">
+            <div>
+                Hradec Králové patří mezi kluby s bohatou historií. Největší úspěch zažili Votroci v sezóně 1959/60, 
+                kdy získali svůj jedniný ligový titul, rok na to je čekalo úspěšné tažení v PMEZ, kde je zastavila až Barcelona ve čtvrtfinále. 
+                Do uplnulé sezony šel Hradec jako nováček pod vedením velezkušeného kouče Miroslava Koubka. Hradec předčil všechna očekávání, 
+                umístil se na 6. místě a dostal se do semifinále Mol cupu. Dokázal porazit Slavii i Plzeň. Domácí zápasy hraje Hradec v Mladé Boleslavi a 
+                stavba vlastního stadionu se mu komplikuje. Vypadá to, že se kvůli rostoucím cenám projekt prodraží. Hrozí i nedoržení termínu dokončení - jaro 2023.
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="navigaceALogo">
+            <div class="fotoLogoDiv">
+                <img src="./obrazky/logo.png" alt="logo aplikace">
+                <h3>Hradec Králové</h3>
+            </div>
+            <div class="patickaNavigace">
+                <ul class="patickaNavigaceList">
+                    <li><a href="./index.html">Domů</a></li>
+                    <li><a href="./A-tym.html">Á-tým</a></li>
+                    <li><a href="./B-tym.html">B-tým</a></li>
+                    <li><a href="./Fotogalerie.html">Fotogalerie</a></li>
+                    <li><a href="./Stadion.html">Stadion</a></li>
+                </ul>
+            </div>
+            <div class="zdroje">
+                <p>oficiální internetové stránky | FC Hradec Králové. (n.d.). FC Hradec Králové. https://www.fchk.cz/</p>
+                <p>Český rozhlas Hradec Králové. (n.d.). Český Rozhlas Hradec Králové. https://hradec.rozhlas.cz/</p>
+                <p>City, H. K. (n.d.). Malšovická aréna fotbalový stadion lízátka hradec králové. HKCITY. https://www.hkcity.cz/malsovicka-arena-fotbalovy-stadion-lizatka-hradec-kralove/</p>
+                <p>Multifunkční aréna. (n.d.). https://www.hradeckralove.org/multifunkcni-arena/ms-31405</p>
+                <p>FC Hradec Králové - Fotbal - FORTUNA:LIGA | iSport.cz. (n.d.). iSport.cz. https://isport.blesk.cz/fotbal-fc-hradec-kralove-106</p>
+                <p>Mapy.cz. (n.d.). Mapy.cz. https://mapy.cz/zakladni?x=15.8564990&y=50.2101490&z=13</p>
+            </div>
+        </div>
+        <div class="patickaObsah">
+            <div class="patickaKontakt">
+                <i class="fa-regular fa-envelope"></i>
+                <p>hajeklu2@uhk.cz</p>
+            </div>
+            <div class="patickaKontakt">
+                <i class="fa-solid fa-phone"></i>
+                <p>+420 654 654 654</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2023 Lukáš Hájek - studentský projekt</p>
+            <p id="modifiedPar"></p>
+            <p>Kontaktní email: hajeklu2@uhk.cz</p>
+        </div>
+    </footer>
+    <script src="./script/mapa.js"></script>
+</body>
+
+</html>

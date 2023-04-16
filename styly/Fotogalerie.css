@@ -1,0 +1,21 @@
+.fotogalerie{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.fotogalerie img{
+    width: 500px;
+    margin-bottom: 50px;
+    border: 5px solid #11110E;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 550px) {
+    .fotogalerie img{
+        width: 300px;
+        margin-bottom: 50px;
+        border: 5px solid #11110E;
+        border-radius: 10px;
+    }
+}

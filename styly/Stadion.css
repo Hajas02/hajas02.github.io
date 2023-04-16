@@ -1,0 +1,80 @@
+.stadionDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.stadionText{
+    width: 80%;
+    background-color: #c9c9c9;
+    font-size: 1.8em;
+    border: 5px solid #11110E;
+    border-radius: 10px;
+    padding: 20px;
+}
+.textyStadionDiv{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.stadionDivImg{
+    width: 40%;
+}
+.stadionImg{
+    width: 100%;
+    border: 5px solid #11110E;
+    border-radius: 10px;
+}
+.stadionPopis{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.div1{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.div2{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    background-color: #c9c9c9;
+    font-size: 1.8em;
+    border: 5px solid #11110E;
+    border-radius: 10px;
+}
+.div1 p{
+    width: 80%;
+    background-color: #c9c9c9;
+    font-size: 1.8em;
+    border: 5px solid #11110E;
+    border-radius: 10px;
+    padding: 20px;
+}
+@media only screen and (max-width: 1200px) {
+    .stadionDiv{
+        flex-direction: column;
+    }
+    .stadionPopis{
+        flex-direction: column;
+    }
+    .textyStadionDiv{
+        width: 90%;
+        align-items: center;
+    }
+    .stadionDivImg{
+        width: 80%;
+    }
+    .div1{
+        align-items: center;
+        width: 90%;
+    }
+    .div2{
+        align-items: center;
+        width: 90%;
+    }
+}
